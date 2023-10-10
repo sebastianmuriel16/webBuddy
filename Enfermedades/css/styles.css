@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@200&family=Poppins:wght@200&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-Padre{
+    margin: 8px 4px 4px 4px;
+    display: grid;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.contenedorTarjetaMinimal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;    
+}
+
+.photoEnfermedadMinimal{
+    position: relative;
+    width: 100%;
+}
+
+.photoEnfermedadMinimal img{
+    width: 100%;
+}
+.photoEnfermedadMinimal h2{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.contenedorBtn{
+    display: flex;
+    justify-content: center;
+    margin: 4px 0 4px 0;
+}
+
+
+.button {
+    width: 16em;
+    border: none;
+    border-radius: 10em;
+    background: #016DD9;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+    margin: 6px 0px 6px 0px;
+   }
+
+/* expandir */
+
+.contenedorTarjetaDetallle{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 6px;
+}
+
+
+.tarjetaDetalle{
+    margin: 8px 4px 4px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.imagenDetalle{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.divBtnClose{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnClose{
+    width: 80%;
+    font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+    font-size: 1rem;
+    align-items: center;
+    height: 48px;
+    border-radius: 0.4rem;
+    font-weight: 800;
+    padding: 0 1.2rem;
+    color: #ddd;
+    border: none;
+    box-shadow: 0 .5rem 1rem rgba(143, 142, 142, 0.15)!important;
+    background: #016DD9 ;
+}
+
+.imagenDetalle img{
+    width: 100%;
+}
+.imagenDetalle h2{
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 0 0 0 12px;
+}
+
+.definicionDetalle{
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 12px 0px 12px;
+    width: 100%;
+}
+
+.sintomas{
+    display: none;
+    margin-top: 4px;
+    padding: 0px 12px 6px 12px;
+    width: 100%;
+}
+
+.sintomas h2{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.sintomas a{
+    color: #016DD9;
+}

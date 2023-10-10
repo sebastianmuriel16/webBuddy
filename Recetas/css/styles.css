@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@200&family=Poppins:wght@200&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Contenedor-Padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contenedor-Tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    position: relative;
+    margin: 12px;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.Photo-Receta{
+    width: 100%;
+    object-fit: cover;
+}
+
+.Photo-Receta img{
+    width: 100%;
+}
+.Photo-Receta h2{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.Instrucciones{
+    width: 100%;
+    color: #000000;
+    display: none;
+    margin-top: 8px;
+}
+
+
+.mostrar{
+    display: block;
+}
