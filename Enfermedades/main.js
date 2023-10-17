@@ -80,7 +80,7 @@ async function  RenderTarjetas(){
     const pDtext = document.createTextNode(enfermedad.definicion)
     btnSintomas.innerText = 'síntomas o consideraciones'
     const psintomasText = document.createTextNode(enfermedad.sintomas)
-    volverDeinicion.innerText = 'Volver a definicion'
+    volverDeinicion.innerText = 'Ocultar'
     btnclose.innerText = 'Volver '
 
     //btnclose.appendChild(i)
@@ -116,11 +116,12 @@ async function  RenderTarjetas(){
 
 
   function mostrarSintomas(){
+    contenedorPadre.style.overflow = 'auto'
     const sintomas = document.querySelector('.sintomas')
     const btnSintomas = document.querySelector('.button')
     const definicionDetalle= document.querySelector('.definicionDetalle')
     const btn = document.querySelector('.button')
-    definicionDetalle.style.display = 'none';
+    definicionDetalle.style.display = 'block';
     btnSintomas.style.display = 'none';
     sintomas.style.display = 'block';
   }

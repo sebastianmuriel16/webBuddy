@@ -54,19 +54,29 @@ async function botones(){
     const arr =[]
     queryEjercicios.forEach((Ejercicio) => {
         const ejercicio = Ejercicio.data();
-        const btnvideo = document.createElement("button");
+        //const btnvideo = document.createElement("button");
+        const divVideo = document.createElement("div");
+        const divTitulo = document.createElement("div");
+        const miniatura = document.createElement("div");
+        const img = document.createElement("img");
         const span = document.createElement("span");
 
         //asignacion de clases
-        btnvideo.setAttribute("class","button");
+        //btnvideo.setAttribute("class","button");
+        divVideo.setAttribute("class","divVideo");
+        miniatura.setAttribute("class","miniatura");
+        divTitulo.setAttribute("class","divTitulo");
+        img.setAttribute("src", 'https://paratumascota.org/wp-content/uploads/2022/03/anna-dudkova-Y9XRyobtsBI-unsplash.jpg');
 
         //informacion de firebase
         span.textContent = ejercicio.nombre;
 
-
-        btnvideo.appendChild(span);
-        arr.push(btnvideo);
-        btnvideo.onclick = () => irVideo(ejercicio);
+        divVideo.appendChild(miniatura);
+        miniatura.appendChild(img);
+        divTitulo.appendChild(span);
+        divVideo.appendChild(divTitulo);
+        arr.push(divVideo);
+        divVideo.onclick = () => irVideo(ejercicio);
     }
 )
     contenedorPadre.append(...arr);
